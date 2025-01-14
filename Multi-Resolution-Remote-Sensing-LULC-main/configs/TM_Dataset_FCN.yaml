@@ -1,0 +1,26 @@
+experiments:
+  experiments_name: 'exp3'
+  save_directory: 'D:\projects_jyshao\mrrs\logs'
+  tensorboard_directory: 'runs'
+
+
+dataset_info:
+  dataset_path: 'D://projects_jyshao//mrrs//data//tm_dataset'
+  dataset_name: 'TM_Dataset'
+  class_name: ["class1","class2","class3","class4"]
+  class_number: 4
+  input_channel_number: 7
+
+model_info:
+  model_name: 'FCN'
+
+train_info:
+  loss_function: 'Cross Entropy Loss'
+  # loss_function: 'Dice Loss'
+  # loss_function: 'Weighted Cross Entropy loss'
+
+  initial_lr: 0.001
+
+hyperparamters:
+  batch_size : 48
+  epoch : 100
